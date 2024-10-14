@@ -1,0 +1,5 @@
+# ninja log v5
+1904	2045	1728901258393181598	debug/bin/example	4799bf9cca8a8e15
+1878	1904	1728901258254167115	safety_corridor/libsafety_corridor.a	5ccc9c3ee9004d36
+2	1801	1728901258150156279	example/CMakeFiles/example.dir/main.cpp.o	34b6dfb2e8532bd6
+1	1878	1728901258227164302	safety_corridor/CMakeFiles/safety_corridor.dir/src/Corridor2d.cpp.o	1be3a953ecc6610a
