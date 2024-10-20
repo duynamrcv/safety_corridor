@@ -19,10 +19,7 @@ std::vector<Eigen::Vector2f> generateRandomPoints(int num, float xMax, float yMa
     {
         float ax = dist(random) * xMax;
         float ay = dist(random) * yMax;
-        if (abs(ax) < xBound && abs(ay) < yBound)
-        {
-            continue;
-        }
+        if (abs(ax) < xBound && abs(ay) < yBound) continue;
         data.emplace_back(Eigen::Vector2f(ax, ay));
         iter++;
     }
