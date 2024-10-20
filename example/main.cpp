@@ -59,7 +59,7 @@ void saveDataToFiles(const std::string& outDir, const std::vector<Eigen::Vector2
 
 int main()
 {
-    std::vector<Eigen::Vector2f> data = generateRandomPoints(200, 50., 1.);
+    std::vector<Eigen::Vector2f> data = generateRandomPoints(100, 50., 30.);
 
     Corridor2d method;
     Eigen::Vector2f pose(0, 0);
