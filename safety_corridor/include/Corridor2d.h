@@ -7,6 +7,18 @@
 
 #include <Eigen/Eigen>
 
-void corridorBuilder2d(float origin_x, float origin_y, float radius,
-                       std::vector<Eigen::Vector2f>& data, std::vector<cv::Point2f>& finalVertex,
-                       std::vector<Eigen::Vector3f>& outputConstrains);
+class Corridor2d
+{
+public:
+    Corridor2d();
+    ~Corridor2d();
+
+    void computeCorridor(const Eigen::Vector2f& pose, const std::vector<Eigen::Vector2f>& data);
+    std::vector<Eigen::Vector2f> getCorridorPoints();
+    std::vector<Eigen::Vector3f> getCorridorConstraints();
+
+private:
+    std::vector<Eigen::Vector2f> vertex_;
+    std::vector<Eigen::Vector3f> constraints_;  // (a,b,c) a x + b y <= c
+    float radius_;
+};
